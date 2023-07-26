@@ -1,0 +1,266 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif ;
+    font-size: 10px;
+    background-color: var(--build-color3);
+    display: flex;
+    justify-content: center;
+}
+
+:root{
+    --build-color1:#4C4C4B;
+    --build-color2:#0078A9;
+    --build-color3:#FCFCFA;
+    --build-color4:#B3C0C9;
+    --build-color5:#E3E3E1;
+    --build-color6:#fff;
+    --build-color7:#1642A1;
+    --build-color8:#C9C9C7; 
+}
+
+form{
+    padding: 1rem; 
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem 2rem;
+    margin-top: 50px;
+    border: 0.5px solid var(--build-color5);
+    background-color: var(--build-color6);
+}
+input, select, textarea{
+    padding: 5px;
+    border-radius: 3px;
+    border:1px solid var(--build-color5);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.03);
+}
+
+legend{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color:var(--build-color2);
+}
+
+fieldset{
+    border: none;
+}
+label{
+    margin-right:5px;
+    font-size:0.8rem;
+}
+
+textarea{
+    width: 415px;
+    height: 110px;
+}
+
+button{
+    background-color: #0078A9;
+    border:none;
+    width: 160px;
+    height: 40px;
+    color: var(--build-color3);
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+}
+button:hover{
+    background-color: var(--build-color7);
+}
+
+img{
+    top:3px;
+    margin-left: 5px;
+    opacity: 0.5;
+    position: absolute;
+
+}
+#desc img{
+    top: 40px;
+}
+#ek img {
+    top: -5px;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+#user-info, #email, #event-type, #subject, #desc, #ek{
+    position: relative;
+}
+#name-surname{  
+    padding-left: 50px;
+    margin-bottom: 0.5rem;
+}
+
+#email{
+    padding-left: 24px;
+    margin-bottom: 0.5rem;
+}
+
+#company{
+    padding-left: 35px;
+    margin-bottom: 0.5rem;
+}
+#event-type{
+   padding-right: 38px;
+}
+
+#event-dropdown{
+    width: 62.8%;
+    margin-bottom: 0.5rem;
+}
+
+
+#subject{
+    padding-left: 34px;
+    margin-bottom: 0.5rem;
+}
+
+#desc{
+    padding-left: 13.5px;
+    margin-bottom: 0.5rem;
+}
+#decs-input{
+    width: 60.5%;
+    display: inline-block;
+}
+
+#ek{
+    display: inline;
+    position: relative;
+    left: 25px;
+}
+
+#tooltip{
+    border: 1px solid var(--build-color7);
+    background-color: var(--build-color3);
+    width: 40%;
+    position: absolute;
+    left: 470px;    
+    top:35px;
+    z-index: 1;
+    display: none;
+    font-size: 0.83rem;
+    text-align: left;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+
+#os, #os-android{
+   padding-right: 18px;
+   margin-bottom: 0.5rem;
+   display: none;
+   
+}
+
+#product{
+    padding-left: 35px;
+    margin-bottom: 0.5rem;
+}
+
+#institutional{
+    margin-bottom: 0.5rem;
+    padding-left: 10.5px;
+    display: none;
+}
+#individual{
+    margin-bottom: 0.5rem;
+    padding-left: 19.5px; 
+    display: none;
+}
+
+#os-info, #os-info-android{
+    width: 62.5%;
+}
+#product-info{
+    width: 63.8%;
+}
+#institutional-info{
+    width: 61.6%;
+}
+#individual-info{
+    width:62.3%;
+}
+
+#version{
+    display: inline;
+    position: relative;
+    right: 6px;
+}
+
+#version-info{
+    width: 60.5%;
+}
+
+input#us_input{
+    width: 57%; 
+}
+
+input#user_name,input#user_surname{
+    width: 31%;
+}
+
+input#user-email,input#user-email-accept{
+    width: 30%;
+}
+
+input#input-company{
+    width: 61.4%;
+}
+
+input#subject-input{
+    width: 62.2%;
+}
+input#ek-input{
+    width: 59.5%;
+}
+.div-bottom-margin {
+    margin-bottom: 2rem;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.bottom-border{
+    border-bottom:1px solid #1642A1;
+    margin-bottom: 2rem; 
+}
+
+label[name="text-area-label"]{
+    
+    position: relative;
+    bottom:60px;
+}
+
+
+@media (max-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+}
+
+
+
+

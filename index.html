@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>C-Prot User Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+<body>
+    <div class="container">
+        <form id="user-form" action="#" method="post">
+            <fieldset id="id-info" class="bottom-border" >
+                <legend>Lisans Bilgileri</legend>
+                <div id="user-info" class="div-bottom-margin text-align">
+                    <label for="us_input">Kullanıcı Adı</label>
+                    <input type="text" autocomplete="off" id="us_input" maxlength="64" required >
+                    <img id = 'icon-img' src="images\info-icon-hover.png" alt="?">
+                    <div id="tooltip">Var ise My C-Prot hesabı oluşturduğunuz E-Posta Adresini giriniz.
+                         Eğer "Deneme" veya Satış Öncesi" bir destek talebiniz var ise bu alana Deneme veya Satış Öncesi diye belirtiniz.</div> 
+                </div>
+            </fieldset>
+            <fieldset id="comminicate-info" class="bottom-border">
+                <legend>İletişim</legend>
+                <div id="comminicate" class="div-bottom-margin text-align">
+                    <div id="name-surname">
+                        <label for="user_name">Ad</label>
+                        <input id="user_name" type="text" maxlength="15" placeholder="Ad" required>
+                        <input id="user_surname" type="text" maxlength="20" placeholder="Soyadi" required>
+                        
+                    </div>
+                    <div id="email">
+                        <label for="user-email">E-posta</label>
+                        <input type="email" id="user-email" placeholder="İletişim E-postası" required>
+                        <input type="email" id="user-email-accept" placeholder="E-postayı onayla" required>
+                    </div>
+                    <div id="company">
+                        <label for="input-company">Şirket</label>
+                        <input id="input-company" type="text" placeholder="(isteğe bağlı)">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="issue-info" class="bottom-border">
+                <legend>Yaşanan Sorun</legend>
+                <div id="issue" class="div-bottom-margin text-align">
+                    <div id="event-type">
+                        <label for="issue-dropdown">Destek Talebi Türü</label>
+                        <select id="event-dropdown" required>
+                            <option value="">--Birini Şeçin--</option>
+                            <option value="Satınal/Lisans Yenile">Satınal/Lisans Yenile</option>
+                            <option value="Aktivasyon/Kayıt">Aktivasyon/Kayıt</option>
+                            <option value="Kullanıcıadı/Paralo">Kullanıcıadı/Paralo</option>
+                            <option value="Virüs Tespiti">Virüs Tespiti</option>
+                            <option value="Hata Mesajları">Hata Mesajları</option>
+                            <option value="Tehdit & Hata Mesajları">Tehdit & Hata Mesajları</option>
+                            <option value="Görüş/Öneri">Görüş/Öneri</option>
+                            <option value="Web Tehditleri">Web Tehditleri</option>
+                            <option value="2878 Kurulum Hatası">2878 Kurulum Hatası</option>
+                            <option value="Tehditler ve Sızma Sorunları">Tehditler ve Sızma Sorunları</option>
+                            <option value="Diğer Sorunlar">Diğer Sorunlar</option>
+                            <option value="Taramada Takılma Sorunu">Taramada Takılma Sorunu</option>
+                        </select>
+                    </div>
+                    
+                    <div id="subject">
+                        <label for="subject-input">Konu</label>
+                        <input id ="subject-input" type="text" autocomplete="off" maxlength="30" required>
+                    </div>
+                    <div id="desc">
+                        <label name="text-area-label" for="">Açıklama</label>
+                        <textarea name="#" id="decs-input" cols="20" rows="5" required></textarea>
+                    </div>
+                    <div id="ek">
+                        <label for="ek-input">Ek</label>
+                        <input type="file"id="ek-input">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="details" class="bottom-border">
+                <legend>Ayrıntılar</legend>
+                <div id="details-info" class="div-bottom-margin text-align">
+                    <div id="product">
+                        <label  for="product-info">Ürün</label>
+                        <select name="#" id="product-info" required>
+                            <option value="">-- Birini seçin --</option>
+                            <option value="Kurumsal">Kurumsal</option>
+                            <option value="Bireysel">Bireysel</option>
+                        </select>
+                    </div>
+                    <div id="institutional">
+                        <label  for="institutional-info">Kurumsal</label>
+                        <select name="#" id="institutional-info" required>
+                            <option value="">-- Birini seçin --</option>
+                            <option value="C-Prot Endpoint Security">C-Prot Endpoint Security</option>
+                            <option value="C-Prot Endpoint Mobile Security">C-Prot Endpoint Mobile Security</option>
+                            <option value="C-Prot Threat Intelligence Portal">C-Prot Threat Intelligence Portal</option>
+                            <option value="C-Prot Device Fingerprint(DFP)">C-Prot Device Fingerprint(DFP)</option>
+                            <option value="C-Prot Fraud Prevention">C-Prot Fraud Prevention</option>
+                            <option value="C-Prot Embedded AppDefense">C-Prot Embedded AppDefense</option>
+                            <option value="C-Prot Cyber Security Kiosk">C-Prot Cyber Security Kiosk</option>
+                            <option value="C-Prot Remote Administrator">C-Prot Remote Administrator</option>
+                        </select>
+                    </div>
+                    <div id="individual">
+                        <label  for="individual-info">Bireysel</label>
+                        <select name="#" id="individual-info" required>
+                            <option value="">-- Birini seçin --</option>
+                            <option value="C-Prot Antivirüs">C-Prot Antivirüs</option>
+                            <option value="C-Prot Internet Security">C-Prot Internet Security</option>
+                            <option value="C-Prot Prime Security">C-Prot Prime Security</option>
+                            <option value="C-Prot Web Protection">C-Prot Web Protection</option>
+                            <option value="C-Prot Mobile Antivirus Security">C-Prot Mobile Antivirus Security</option>
+                            <option value="C-Prot Smart TV Security">C-Prot Smart TV Security</option>
+                            <option value="C-Prot Parental Control">C-Prot Parental Control</option>
+                            <option value="C-Prot VPN">C-Prot VPN</option>
+                            <option value="C-Prot QR Scanner">C-Prot QR Scanner </option>
+                            <option value="C-Prot Applocker">C-Prot Applocker</option>
+                        </select>
+                    </div>
+                    <div id="os">
+                        <label for="os-info">İşletim sistemi</label>
+                        <select name="#" id="os-info" required>
+                            <option value="#">-- Birini seçin --</option>
+                            <option value="Windows 11">Windows 11</option>
+                            <option value="Windows 10">Windows 10</option>
+                            <option value="Windows 8.1">Windows 8.1</option>
+                            <option value="Windows 8">Windows 8</option>
+                            <option value="Windows 7">Windows 7</option>
+                            <option value="Windows Vista">Windows Vista</option>
+                            <option value="Windows XP">Windows XP</option>
+                            <option value="Windows Server 2022">Windows Server 2022</option>
+                            <option value="Windows Server 2019">Windows Server 2019</option>
+                            <option value="Windows Server 2016">Windows Server 2016</option>
+                            <option value="Windows Server 2012">Windows Server 2012</option>
+                            <option value="Windows Server 2012 R2">Windows Server 2012 R2</option>
+                            <option value="Windows Server 2008">Windows Server 2008</option>
+                            <option value="Windows Server 2008 R2">Windows Server 2008 R2</option>
+                            <option value="macOS 13(Ventura)">macOS 13(Ventura)</option>
+                            <option value="macOS 12(Monterey)">macOS 12(Monterey)</option>
+                            <option value="macOS 11(Big Sur)">macOS 11(Big Sur)</option>
+                            <option value="macOS 10.15(Catelina)">macOS 10.15(Catelina)</option>
+                            <option value="macOS 10.14(Mojave)">macOS 10.14(Mojave)</option>
+                            <option value="macOS 10.13(High Sierra)">macOS 10.13(High Sierra)</option>
+                            <option value="macOS 10.12(Sierra)">macOS 10.12(Sierra)</option>
+                            <option value="OS X 10.11(El Capitan)">OS X 10.11(El Capitan)</option>
+                            <option value="OS X 10.x">OS X 10.x</option>
+                            <option value="Mac OS 9">Mac OS 9</option>
+                            <option value="Mac OS 8">Mac OS 8</option>
+                            <option value="Linux Desktop">Linux Desktop</option>
+                            <option value="Virtualization platform">Virtualization platform</option>
+                            <option value="Android">Android</option>
+                            <option value="iOS">iOS</option>
+                            
+                        </select>   
+                    </div>
+                    <div id="os-android">
+                        <label for="os-info">İşletim sistemi</label>
+                        <select disabled name="#" id="os-info-android" required>
+                            <option selected value="Android">Android</option>
+                        </select>   
+                    </div>
+                </div>
+            </fieldset>
+            <div id="btn" class="text-align">
+                <button type="submit" value="gönder">Gönder</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
