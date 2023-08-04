@@ -88,9 +88,6 @@ img{
 #desc img{
     top: 40px;
 }
-#ek img {
-    top: -5px;
-}
 
 img:hover{
     opacity: 0.8;
@@ -136,11 +133,13 @@ img:hover{
     width: 60.5%;
     display: inline-block;
 }
-
 #ek{
-    display: inline;
-    position: relative;
-    left: 25px;
+    padding-left: 48px;
+    
+}
+#file-input{
+    width: 63.6%;
+    
 }
 
 #tooltip{

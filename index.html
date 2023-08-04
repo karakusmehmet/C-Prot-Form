@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>C-Prot User Form</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="script.js">
+    
     
 </head>
 
@@ -13,10 +13,10 @@
     <div class="container">
         <form id="user-form" action="#" method="post">
             <fieldset id="id-info" class="bottom-border" >
-                <legend>Lisans Bilgileri</legend>
+                <legend id = 'legend'>Lisans Bilgileri</legend>
                 <div id="user-info" class="div-bottom-margin text-align">
                     <label for="us_input">Kullanıcı Adı</label>
-                    <input type="text" autocomplete="off" id="us_input" maxlength="64" required >
+                    <input type="text" autocomplete="off" id="us_input" maxlength="64"  >
                     <img id = 'icon-img' src="images\info-icon-hover.png" alt="?">
                     <div id="tooltip">Var ise My C-Prot hesabı oluşturduğunuz E-Posta Adresini giriniz.
                          Eğer "Deneme" veya Satış Öncesi" bir destek talebiniz var ise bu alana Deneme veya Satış Öncesi diye belirtiniz.</div> 
@@ -27,14 +27,14 @@
                 <div id="comminicate" class="div-bottom-margin text-align">
                     <div id="name-surname">
                         <label for="user_name">Ad</label>
-                        <input id="user_name" type="text" maxlength="15" placeholder="Ad" required>
-                        <input id="user_surname" type="text" maxlength="20" placeholder="Soyadi" required>
+                        <input id="user_name" type="text" maxlength="15" placeholder="Ad" >
+                        <input id="user_surname" type="text" maxlength="20" placeholder="Soyadi" >
                         
                     </div>
                     <div id="email">
                         <label for="user-email">E-posta</label>
-                        <input type="email" id="user-email" placeholder="İletişim E-postası" required>
-                        <input type="email" id="user-email-accept" placeholder="E-postayı onayla" required>
+                        <input type="email" id="user-email" placeholder="İletişim E-postası" >
+                        <input type="email" id="user-email-accept" placeholder="E-postayı onayla" >
                     </div>
                     <div id="company">
                         <label for="input-company">Şirket</label>
@@ -47,7 +47,7 @@
                 <div id="issue" class="div-bottom-margin text-align">
                     <div id="event-type">
                         <label for="issue-dropdown">Destek Talebi Türü</label>
-                        <select id="event-dropdown" required>
+                        <select id="event-dropdown">
                             <option value="">--Birini Şeçin--</option>
                             <option value="Satınal/Lisans Yenile">Satınal/Lisans Yenile</option>
                             <option value="Aktivasyon/Kayıt">Aktivasyon/Kayıt</option>
@@ -66,15 +66,16 @@
                     
                     <div id="subject">
                         <label for="subject-input">Konu</label>
-                        <input id ="subject-input" type="text" autocomplete="off" maxlength="30" required>
+                        <input id ="subject-input" type="text" autocomplete="off" maxlength="30" >
                     </div>
                     <div id="desc">
                         <label name="text-area-label" for="">Açıklama</label>
-                        <textarea name="#" id="decs-input" cols="20" rows="5" required></textarea>
+                        <textarea name="#" id="decs-input" cols="20" rows="5" ></textarea>
                     </div>
                     <div id="ek">
                         <label for="ek-input">Ek</label>
-                        <input type="file"id="ek-input">
+                        <input name="file" id="file-input" type="file">
+                        
                     </div>
                 </div>
             </fieldset>
@@ -83,7 +84,7 @@
                 <div id="details-info" class="div-bottom-margin text-align">
                     <div id="product">
                         <label  for="product-info">Ürün</label>
-                        <select name="#" id="product-info" required>
+                        <select name="#" id="product-info" >
                             <option value="">-- Birini seçin --</option>
                             <option value="Kurumsal">Kurumsal</option>
                             <option value="Bireysel">Bireysel</option>
@@ -91,7 +92,7 @@
                     </div>
                     <div id="institutional">
                         <label  for="institutional-info">Kurumsal</label>
-                        <select name="#" id="institutional-info" required>
+                        <select name="#" id="institutional-info" >
                             <option value="">-- Birini seçin --</option>
                             <option value="C-Prot Endpoint Security">C-Prot Endpoint Security</option>
                             <option value="C-Prot Endpoint Mobile Security">C-Prot Endpoint Mobile Security</option>
@@ -105,7 +106,7 @@
                     </div>
                     <div id="individual">
                         <label  for="individual-info">Bireysel</label>
-                        <select name="#" id="individual-info" required>
+                        <select name="#" id="individual-info" >
                             <option value="">-- Birini seçin --</option>
                             <option value="C-Prot Antivirüs">C-Prot Antivirüs</option>
                             <option value="C-Prot Internet Security">C-Prot Internet Security</option>
@@ -121,7 +122,7 @@
                     </div>
                     <div id="os">
                         <label for="os-info">İşletim sistemi</label>
-                        <select name="#" id="os-info" required>
+                        <select name="#" id="os-info" >
                             <option value="#">-- Birini seçin --</option>
                             <option value="Windows 11">Windows 11</option>
                             <option value="Windows 10">Windows 10</option>
@@ -157,7 +158,7 @@
                     </div>
                     <div id="os-android">
                         <label for="os-info">İşletim sistemi</label>
-                        <select disabled name="#" id="os-info-android" required>
+                        <select disabled name="#" id="os-info-android" >
                             <option selected value="Android">Android</option>
                         </select>   
                     </div>
